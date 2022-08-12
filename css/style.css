@@ -149,15 +149,15 @@ img {
 }
 
 .active_link_studio::after {
-    /* position: relative;
+   
     text-decoration: underline;
-    color: #00F;
-    cursor: help; */
 
-    /* display:flex
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-decoration: underline 2px black; */
+}
+
+.active_link_portfolio::after {
+
+    text-decoration: underline;
+
 }
 
 .header_svg_items {
