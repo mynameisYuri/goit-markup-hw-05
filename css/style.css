@@ -131,7 +131,7 @@ img {
     line-height: var(--header_line-height);
     letter-spacing: 0.02em;
     color: var(--header_color_2);
-    /* transition: all 250ms ease-in 0s; */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_menu:hover {
@@ -142,13 +142,10 @@ img {
     line-height: var(--header_line-height);
     letter-spacing: 0.02em;
     color: var(--hover_color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_menu:focus {
     color: var(--hover_color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .active_link_studio::after {
@@ -168,16 +165,15 @@ img {
     align-items: center;
     stroke: currentColor;
     fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_svg_items:hover {
     color: var(--hover_color);
     stroke: var(--hover_color);
     fill: var(--hover_color);
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_mail {
@@ -188,6 +184,7 @@ img {
     line-height: var(--header_line-height);
     letter-spacing: 0.02em;
     color: var(--header_color_3);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_mail:hover {
@@ -198,12 +195,10 @@ img {
     line-height: var(--header_line-height);
     letter-spacing: 0.02em;
     color: var(--hover_color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_mail:focus {
     color: var(--hover_color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_tel {
@@ -214,6 +209,7 @@ img {
     line-height: var(--header_line-height);
     letter-spacing: 0.02em;
     color: var(--header_color_3);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_tel:hover {
@@ -224,12 +220,10 @@ img {
     line-height: var(--header_line-height);
     letter-spacing: 0.02em;
     color: var(--hover_color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_tel:focus {
     color: var(--hover_color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -492,15 +486,16 @@ img {
 }
 
 .our_team_item_button {
-
     padding: 0;
     border: none;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var(--first_background_page_color);
+    background: var(--first_background_page_color);
     fill: #AFB1B8;
-    
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our_team_button_list:not(:last-child) {
@@ -509,19 +504,13 @@ img {
 
 .our_team_item_button:hover {
     border: none;
-    background-color: var(--hover_color);
+    background: var(--hover_color);
     fill: var(--first_background_page_color);
-
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our_team_item_button:focus {
-    background-color: var(--hover_color);
+    background: var(--hover_color);
     fill: var(--first_background_page_color);
-
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .specialist_photo {
@@ -610,23 +599,20 @@ img {
     border-radius: 4px;
     text-decoration: none;
     fill: #AFB1B8;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular_customers_item_link:hover {
     border: 1px solid #2196F3;
     fill: var(--hover_color);
-
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular_customers_item_link:focus {
     fill: var(--hover_color);
     border: 1px solid #2196F3;
     outline:none;
-
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .regular_customers_item_link_container {
@@ -696,6 +682,8 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--first_background_page_color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_adress:hover {
@@ -706,12 +694,10 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--hover_color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_adress:focus {
     color: var(--hover_color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_mail {
@@ -722,6 +708,8 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(225, 225, 225, 0.6);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_mail:hover {
@@ -732,12 +720,10 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--hover_color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_mail:focus {
     color: var(--hover_color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_tel {
@@ -748,6 +734,8 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(225, 225, 225, 0.6);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_tel:hover {
@@ -758,12 +746,10 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--hover_color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_tel:focus {
     color: var(--hover_color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_list:not(:last-child) {
@@ -804,27 +790,21 @@ img {
     background: rgba(255, 255, 255, 0.1);   
     fill: var(--first_background_page_color);
 
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_section_2_button:hover {
     background: var(--hover_color);
-
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_section_2_button:focus {
     background: var(--hover_color);
-
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
 }
 
 .footer_section_2_svg_style {
     margin: auto;
     text-align: center;
     display: block;
-    /* background-size: auto; */
 }
 
 .backdrop {
@@ -842,30 +822,23 @@ img {
 
     visibility: visible;
 
-    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    /* transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0);
-
-    
 }
 
 .backdrop.is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-
-    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-
-
 }
 
 
@@ -884,7 +857,6 @@ img {
     transform: translate(-50%, -50%) scale(1);
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .modal_close_btn {
@@ -964,6 +936,12 @@ img {
     padding: 6px 22px 6px 22px;
 
     cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio_btn:hover {
@@ -975,20 +953,11 @@ img {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     
     border-radius: 4px;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .portfolio_btn:focus {
     /* outline: 2px solid black; */
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -1015,13 +984,12 @@ img {
     margin-right: 30px;
     margin-bottom: 30px;
 
-    
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -1057,7 +1025,6 @@ img {
     letter-spacing: 0.03em;
     
     color: var(--header_color_3);
-
 }
 
 .card:hover .portfolio_card_description {
