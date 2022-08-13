@@ -131,6 +131,9 @@ img {
     line-height: var(--header_line-height);
     letter-spacing: 0.02em;
     color: var(--header_color_2);
+
+    /* position: relative; */
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -148,9 +151,20 @@ img {
     color: var(--hover_color);
 }
 
-.active_link_studio::after {
+.active_link::after {
    
-    text-decoration: underline;
+    content: '';
+
+    /* position: absolute;
+
+    left: 0;
+    bottom: 0; */
+    
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    background-color: var(--header_color_2);
+    border-radius: 1.75px;
 
 }
 
@@ -494,8 +508,8 @@ img {
     background: var(--first_background_page_color);
     fill: #AFB1B8;
 
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our_team_button_list:not(:last-child) {
@@ -600,8 +614,8 @@ img {
     text-decoration: none;
     fill: #AFB1B8;
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular_customers_item_link:hover {
@@ -822,7 +836,7 @@ img {
 
     visibility: visible;
 
-    /* transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
@@ -937,11 +951,9 @@ img {
 
     cursor: pointer;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio_btn:hover {
